@@ -21,8 +21,8 @@ func FillRecipe(bytes []byte, gdkconf confparser.Config) string {
 	recipe = strings.ReplaceAll(recipe, "{COMPONENT_NAME}", gdkconf.Component.Name)
 	recipe = strings.ReplaceAll(recipe, "{COMPONENT_VERSION}", gdkconf.Component.Version)
 	recipe = strings.ReplaceAll(recipe, "{COMPONENT_AUTHOR}", gdkconf.Component.Author)
-	recipe = strings.ReplaceAll(recipe, "{BUCKET}", gdkconf.Component.Publish.Bucket)
-	recipe = strings.ReplaceAll(recipe, "{REGION}", gdkconf.Component.Publish.Region)
+	recipe = strings.ReplaceAll(recipe, "{BUCKET_NAME}", gdkconf.Component.Publish.Bucket)
+	recipe = strings.ReplaceAll(recipe, "{REGION_NAME}", gdkconf.Component.Publish.Region)
 
 	return recipe
 }
